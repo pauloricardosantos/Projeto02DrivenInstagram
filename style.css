@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+}
+
+body {font-family: 'Roboto', sans-serif;
+
+    background-color: #E5E5E5;
+}
+.barra-topo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+.barra-topo-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 60px;
+    width: 935px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo-instagram{
+    height: 22px;
+    width: 22px;
+    margin-top: 15px;
+    padding-right: 10px;
+    border-right: 1px solid #DBDBDB;
+}
+.logo img {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.pesquisa{
+    width: 215px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    border: 1px solid rgba(219, 219, 219, 80%);
+    text-align: center;
+    color: #979797;
+    font-size: 12px;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+.mobile {
+    display: none;
+}
+.pesquisa p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+.icones {
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+}
+ion-icon {
+    height: 22px;
+    width: 22px;
+}
+.conteudo{
+    width: 935px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 60px;
+}
+.coluna-principal{
+    width: 614px;
+}
+.barra-stories{
+    display: flex;
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    max-width: 614px;
+    overflow:hidden;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+
+    position: relative;
+}
+
+.seta-stories{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 8px;
+    top: 40px;
+    border-radius: 50%;
+
+    box-shadow: rgb(194, 189, 189) 2px 3px 2px;
+}
+.storie{
+    width: 66px;
+    height: 80px;
+    padding-left: 0 0 9px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 14px 14px;
+
+    position: relative;
+}
+.nome-perfil{
+    width: 66px;
+    height: 38px;
+    padding-left: auto;
+    margin: auto;
+    font-size: 12px;
+    display: flex;
+    
+    position: absolute;
+    bottom: -30px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.borda-storie{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    
+    position: relative;
+}
+.foto-perfil{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    
+    position: absolute;
+}
+.feed{
+    width: 614px;
+    
+    margin-top: 24px;
+
+    border: 1px solid #DBDBDB;
+}
+.post,.post2{
+    margin-bottom: 60px;
+}
+.cabeca-post{
+    width: 614px;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.post .cabeca-post img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.cabeca-post-esquerda{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 17px;
+}
+.cabeca-post-direita{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    margin-right: 17px;
+}
+.post .cabeca-post .cabeca-post-esquerda p {
+    padding-left: 15px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.feed img {
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+}
+.icones-post{
+    width: 614px;
+    height: 44px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.config-icones-post{
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    padding: 14px 0 13px 17px; 
+}
+.config-icones-post2{
+    padding-top: 14px; 
+    padding-bottom: 13px;
+    padding-right: 17px;
+}
+.status-post{
+    width: 614px;
+    height: 30px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+
+    padding-left:17px;
+    padding-bottom: 13px;
+    padding-top: 12px;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    background-color: 
+    #FFFFFF;
+}
+.status-post strong {
+    font-weight: bold;
+}
+.status-post img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right:5px;
+}
+.coluna-side-bar{
+    width: 293px;
+    margin-top: 34px;
+    background-color: #E5E5E5;
+}
+.perfil-side{
+    display: flex;
+    width: 293px;
+    margin: 0 0 24px 0;
+    justify-content: start;
+    align-items: center;
+}
+.perfil-side span a {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262626;
+}
+.perfil-side span p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+}
+.sugestao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.sugestao p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+}
+.sugestao span a {
+    text-decoration: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #262626;
+}
+
+.perfil-side img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin-right: 17px;
+}
+.sugestoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-side-sugestoes span {
+    margin-left: 15px;
+}
+.botao-seguir{
+    padding: 0 0 0 0;
+}
+.perfil-side-sugestoes {
+    display: flex;
+    align-items: center;
+    margin: 11px 0;
+}
+.sugestoes .perfil-side-sugestoes img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.sugestoes .perfil-side-sugestoes span a {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:black;
+}
+.sugestoes .perfil-side-sugestoes span p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8E8E8E;
+}
+.sugestoes span a {
+    text-decoration: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #139EF2;
+}
+aside {
+    position: absolute;
+    right: 0;
+    top: 76px;
+}
+.termos{
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C7C7C7;
+
+    margin-top: 33px;
+}
+.direitos{
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#C7C7C7;
+
+    margin-top: 18px;
+}
+.barra-mobile-conteudo{
+    display: none;
+}
+@media (max-width: 935px) {
+    aside {
+        display: none;
+   }
+   nav {
+       width: 100%;
+   }
+   .barra-topo-conteudo{
+        width: 100%;
+   }
+   main {
+       width: 100%;
+   }
+   .coluna-principal{
+    margin: 0 auto;
+   }
+}
+
+@media (max-width: 614px){
+    .conteudo {
+        width: 100%;
+    }
+    .coluna-principal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .barra-stories {
+        width: 100%;
+        background: rgba(229, 229, 229, 0.0) 
+    }
+    .logo img {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+    .barra-topo-conteudo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .pesquisa {
+        display: none;
+    }
+    .mobile{
+        display: initial;
+    }
+    .logo-instagram{
+        width: 22px;
+        margin-left: 10px;
+        border: none;
+    }
+    .icones{
+        width: 22px;
+        margin-right: 10px;
+    }
+     .icones .locais {
+         display: none;
+     }
+     .icones .mencoes {
+        display: none;
+     } 
+     .icones .visitar-perfil{
+        display: none;
+     }
+     .seta-stories{
+         display: none;
+     }
+     .feed{
+        width: 100%;
+     }
+    .cabeca-post{
+        width: 100%;
+    }
+    .icones-post{
+        width: 100%;
+    }
+    .status-post{
+        width: 100%;
+    }
+     .barra-mobile{
+         width: 100%;
+         height: 54px;
+         position: fixed;
+         bottom: 0;
+    }
+     .barra-mobile-conteudo{
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        background-color: #FFFFFF;
+    }
+    .icones-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
